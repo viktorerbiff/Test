@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Nettside</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #f0f0f0;
+        }
+        button {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Velkommen til min nettside</h1>
+        <p>Dette er en enkel nettside med mørkt tema.</p>
+        <button onclick="visMelding()">Klikk meg</button>
+        <p id="melding"></p>
+    </div>
+    <script>
+        function visMelding() {
+            document.getElementById("melding").innerText = "Du klikket på knappen!";
+        }
+    </script>
+</body>
+</html>
